@@ -16,7 +16,16 @@
 		E858A0FE25491F1F002948B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E858A0FC25491F1F002948B2 /* LaunchScreen.storyboard */; };
 		E858A10925491F20002948B2 /* gokasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E858A10825491F20002948B2 /* gokasTests.swift */; };
 		E858A11425491F20002948B2 /* gokasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E858A11325491F20002948B2 /* gokasUITests.swift */; };
-		E858A1242549368D002948B2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E858A1222549368D002948B2 /* CollectionViewCell.swift */; };
+		E858A12E254A455F002948B2 /* FirstCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E858A12C254A455F002948B2 /* FirstCollectionTableViewCell.swift */; };
+		E858A12F254A455F002948B2 /* FirstCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E858A12D254A455F002948B2 /* FirstCollectionTableViewCell.xib */; };
+		E858A132254A4593002948B2 /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E858A130254A4593002948B2 /* FirstCollectionViewCell.swift */; };
+		E858A133254A4593002948B2 /* FirstCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E858A131254A4593002948B2 /* FirstCollectionViewCell.xib */; };
+		E858A136254A6137002948B2 /* SecondViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E858A134254A6137002948B2 /* SecondViewTableViewCell.swift */; };
+		E858A137254A6137002948B2 /* SecondViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E858A135254A6137002948B2 /* SecondViewTableViewCell.xib */; };
+		E858A13A254A6563002948B2 /* ThirdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E858A138254A6563002948B2 /* ThirdTableViewCell.swift */; };
+		E858A13B254A6563002948B2 /* ThirdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E858A139254A6563002948B2 /* ThirdTableViewCell.xib */; };
+		E858A13E254A66AF002948B2 /* SecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E858A13C254A66AF002948B2 /* SecondCollectionViewCell.swift */; };
+		E858A13F254A66AF002948B2 /* SecondCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E858A13D254A66AF002948B2 /* SecondCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +61,16 @@
 		E858A10F25491F20002948B2 /* gokasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gokasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E858A11325491F20002948B2 /* gokasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gokasUITests.swift; sourceTree = "<group>"; };
 		E858A11525491F20002948B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E858A1222549368D002948B2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E858A12C254A455F002948B2 /* FirstCollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		E858A12D254A455F002948B2 /* FirstCollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstCollectionTableViewCell.xib; sourceTree = "<group>"; };
+		E858A130254A4593002948B2 /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
+		E858A131254A4593002948B2 /* FirstCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstCollectionViewCell.xib; sourceTree = "<group>"; };
+		E858A134254A6137002948B2 /* SecondViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewTableViewCell.swift; sourceTree = "<group>"; };
+		E858A135254A6137002948B2 /* SecondViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewTableViewCell.xib; sourceTree = "<group>"; };
+		E858A138254A6563002948B2 /* ThirdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableViewCell.swift; sourceTree = "<group>"; };
+		E858A139254A6563002948B2 /* ThirdTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdTableViewCell.xib; sourceTree = "<group>"; };
+		E858A13C254A66AF002948B2 /* SecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCollectionViewCell.swift; sourceTree = "<group>"; };
+		E858A13D254A66AF002948B2 /* SecondCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +124,8 @@
 				E858A0EE25491F1F002948B2 /* AppDelegate.swift */,
 				E858A0F025491F1F002948B2 /* SceneDelegate.swift */,
 				E858A0F225491F1F002948B2 /* ViewController.swift */,
-				E858A12125493672002948B2 /* Cells */,
+				E858A12B254A4435002948B2 /* collectionViewCell */,
+				E858A12A254A4426002948B2 /* tableViewCell */,
 				E858A0F425491F1F002948B2 /* Main.storyboard */,
 				E858A0FA25491F1F002948B2 /* Assets.xcassets */,
 				E858A0FC25491F1F002948B2 /* LaunchScreen.storyboard */,
@@ -134,12 +153,28 @@
 			path = gokasUITests;
 			sourceTree = "<group>";
 		};
-		E858A12125493672002948B2 /* Cells */ = {
+		E858A12A254A4426002948B2 /* tableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				E858A1222549368D002948B2 /* CollectionViewCell.swift */,
+				E858A12C254A455F002948B2 /* FirstCollectionTableViewCell.swift */,
+				E858A12D254A455F002948B2 /* FirstCollectionTableViewCell.xib */,
+				E858A134254A6137002948B2 /* SecondViewTableViewCell.swift */,
+				E858A135254A6137002948B2 /* SecondViewTableViewCell.xib */,
+				E858A138254A6563002948B2 /* ThirdTableViewCell.swift */,
+				E858A139254A6563002948B2 /* ThirdTableViewCell.xib */,
 			);
-			path = Cells;
+			path = tableViewCell;
+			sourceTree = "<group>";
+		};
+		E858A12B254A4435002948B2 /* collectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E858A130254A4593002948B2 /* FirstCollectionViewCell.swift */,
+				E858A131254A4593002948B2 /* FirstCollectionViewCell.xib */,
+				E858A13C254A66AF002948B2 /* SecondCollectionViewCell.swift */,
+				E858A13D254A66AF002948B2 /* SecondCollectionViewCell.xib */,
+			);
+			path = collectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,8 +281,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E858A13F254A66AF002948B2 /* SecondCollectionViewCell.xib in Resources */,
+				E858A12F254A455F002948B2 /* FirstCollectionTableViewCell.xib in Resources */,
 				E858A0FE25491F1F002948B2 /* LaunchScreen.storyboard in Resources */,
+				E858A13B254A6563002948B2 /* ThirdTableViewCell.xib in Resources */,
+				E858A133254A4593002948B2 /* FirstCollectionViewCell.xib in Resources */,
 				E858A0FB25491F1F002948B2 /* Assets.xcassets in Resources */,
+				E858A137254A6137002948B2 /* SecondViewTableViewCell.xib in Resources */,
 				E858A0F625491F1F002948B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,9 +313,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E858A1242549368D002948B2 /* CollectionViewCell.swift in Sources */,
 				E858A0F325491F1F002948B2 /* ViewController.swift in Sources */,
+				E858A13A254A6563002948B2 /* ThirdTableViewCell.swift in Sources */,
 				E858A0EF25491F1F002948B2 /* AppDelegate.swift in Sources */,
+				E858A12E254A455F002948B2 /* FirstCollectionTableViewCell.swift in Sources */,
+				E858A136254A6137002948B2 /* SecondViewTableViewCell.swift in Sources */,
+				E858A13E254A66AF002948B2 /* SecondCollectionViewCell.swift in Sources */,
+				E858A132254A4593002948B2 /* FirstCollectionViewCell.swift in Sources */,
 				E858A0F125491F1F002948B2 /* SceneDelegate.swift in Sources */,
 				E858A0F925491F1F002948B2 /* gokas.xcdatamodeld in Sources */,
 			);
