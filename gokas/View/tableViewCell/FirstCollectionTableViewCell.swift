@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class FirstCollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var firstCollectionView: UICollectionView!
@@ -43,7 +45,7 @@ class FirstCollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, U
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FirstCollectionViewCell.identifier, for: indexPath) as! FirstCollectionViewCell
-        cell.backgroundColor = .red
+       
         return cell
     }
     

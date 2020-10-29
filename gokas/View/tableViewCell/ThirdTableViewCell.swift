@@ -41,6 +41,7 @@ class ThirdTableViewCell: UITableViewCell, UICollectionViewDelegateFlowLayout, U
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SecondCollectionViewCell.identifier, for: indexPath) as! SecondCollectionViewCell
+        
         cell.backgroundColor = .red
         return cell
     }
