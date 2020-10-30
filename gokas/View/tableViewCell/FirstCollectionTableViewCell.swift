@@ -47,12 +47,17 @@ class FirstCollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, U
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FirstCollectionViewCell.identifier, for: indexPath) as! FirstCollectionViewCell
         cell.imageView?.image(fromUrl: gokasContent?.spotlight?[indexPath.row].bannerURL ?? "erro")
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOffset = CGSize(width: 0, height: 0)
+        cell.layer.shadowRadius = 5.0
+        cell.layer.shadowOpacity = 0.5
+        cell.layer.masksToBounds = false
         return cell
     }
     
     
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            return CGSize(width: 500, height: 250)
+            return CGSize(width: 330, height: 180)
         }
 }
 
@@ -91,3 +96,5 @@ extension FirstCollectionTableViewCell {
         })
     }
 }
+
+

@@ -18,6 +18,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aKn-wL-Y13">
                                 <rect key="frame" x="16" y="118" width="382" height="728"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="8" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="y6r-4r-8eC">
                                         <rect key="frame" x="0.0" y="28" width="382" height="43.5"/>
@@ -30,14 +31,14 @@
                                 </prototypes>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gok" translatesAutoresizingMaskIntoConstraints="NO" id="oCU-ZM-qY8">
-                                <rect key="frame" x="16" y="60" width="50" height="50"/>
+                                <rect key="frame" x="32" y="60" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Wqp-ea-FF7"/>
                                     <constraint firstAttribute="width" constant="50" id="uJ2-XN-Zbi"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="olá, Rennan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6i-Sl-8h2">
-                                <rect key="frame" x="74" y="60" width="320" height="50"/>
+                                <rect key="frame" x="90" y="60" width="304" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="88h-ZN-230"/>
                                 </constraints>
@@ -53,7 +54,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aKn-wL-Y13" secondAttribute="trailing" constant="16" id="T8f-9b-h0o"/>
                             <constraint firstItem="aKn-wL-Y13" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TnK-fW-F4p"/>
                             <constraint firstItem="Z6i-Sl-8h2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Tpd-Ga-AaR"/>
-                            <constraint firstItem="oCU-ZM-qY8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VN7-9W-GOW"/>
+                            <constraint firstItem="oCU-ZM-qY8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="VN7-9W-GOW"/>
                             <constraint firstItem="oCU-ZM-qY8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Z1P-I5-Xqz"/>
                             <constraint firstItem="aKn-wL-Y13" firstAttribute="top" secondItem="Z6i-Sl-8h2" secondAttribute="bottom" constant="8" id="ary-UW-8Se"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aKn-wL-Y13" secondAttribute="bottom" constant="16" id="luk-TZ-9dm"/>

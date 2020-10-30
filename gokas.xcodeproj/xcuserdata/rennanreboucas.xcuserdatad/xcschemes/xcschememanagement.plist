@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>gokasTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E858A0EA25491F1F002948B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E858A10325491F20002948B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E858A10E25491F20002948B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

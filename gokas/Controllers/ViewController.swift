@@ -87,7 +87,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         if indexPath.row == 1 {
             let cell = UITableViewCell()
-            cell.textLabel?.text = gokasContent?.cash?.title ?? "test"
+            let stringReceived = gokasContent?.cash?.title ?? ""
+            let stringArray = stringReceived.components(separatedBy: " ")
+            let att1 = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 12)]
+            let attributedStringColor = [NSAttributedString.Key.foregroundColor : UIColor.green.cgColor]
+            let final1 = NSMutableAttributedString(string: stringArray[0], attributes: att1)
+            let final2 = NSMutableAttributedString(string: stringArray.last!)
+            final1.append(final2)
+            cell.textLabel?.attributedText = final1 ?? nil
             return cell
         }
         

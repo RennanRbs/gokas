@@ -20,7 +20,11 @@ class SecondCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         imageView.layer.cornerRadius = 10
         imageView.clipsToBounds = true
-        imageView.contentMode = .scaleAspectFill
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 0)
+        self.layer.shadowRadius = 5.0
+        self.layer.shadowOpacity = 0.5
+        self.layer.masksToBounds = false
         
     }
 
