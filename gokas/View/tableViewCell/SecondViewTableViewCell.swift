@@ -18,7 +18,8 @@ class SecondViewTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        imageView?.layer.cornerRadius = 10
+        imageView?.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

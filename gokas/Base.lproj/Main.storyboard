@@ -15,23 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KoW-ER-ux7">
-                                <rect key="frame" x="32" y="60" width="45" height="45"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="P2p-5M-op4"/>
-                                    <constraint firstAttribute="width" constant="45" id="yId-yP-M5b"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6i-Sl-8h2">
-                                <rect key="frame" x="85" y="72" width="321" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aKn-wL-Y13">
-                                <rect key="frame" x="16" y="121" width="382" height="725"/>
+                                <rect key="frame" x="16" y="118" width="382" height="728"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="y6r-4r-8eC">
@@ -44,23 +29,38 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gok" translatesAutoresizingMaskIntoConstraints="NO" id="oCU-ZM-qY8">
+                                <rect key="frame" x="16" y="60" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Wqp-ea-FF7"/>
+                                    <constraint firstAttribute="width" constant="50" id="uJ2-XN-Zbi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="olá, Rennan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6i-Sl-8h2">
+                                <rect key="frame" x="74" y="60" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="88h-ZN-230"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="KoW-ER-ux7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="6gB-v4-pRp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aKn-wL-Y13" secondAttribute="trailing" constant="16" id="BSk-pn-V5I"/>
-                            <constraint firstItem="KoW-ER-ux7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="NsZ-JX-7SB"/>
-                            <constraint firstItem="aKn-wL-Y13" firstAttribute="top" secondItem="KoW-ER-ux7" secondAttribute="bottom" constant="16" id="Tt7-j3-DRt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aKn-wL-Y13" secondAttribute="bottom" constant="16" id="aq9-hF-Z2y"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z6i-Sl-8h2" secondAttribute="trailing" constant="8" id="azx-rX-Bzv"/>
-                            <constraint firstItem="aKn-wL-Y13" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nxI-xE-XE4"/>
-                            <constraint firstItem="Z6i-Sl-8h2" firstAttribute="leading" secondItem="KoW-ER-ux7" secondAttribute="trailing" constant="8" id="uHU-B1-dtn"/>
-                            <constraint firstItem="Z6i-Sl-8h2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="uNT-df-CGv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z6i-Sl-8h2" secondAttribute="trailing" constant="20" id="9A0-wf-zBm"/>
+                            <constraint firstItem="Z6i-Sl-8h2" firstAttribute="leading" secondItem="oCU-ZM-qY8" secondAttribute="trailing" constant="8" id="MVD-kh-gw7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aKn-wL-Y13" secondAttribute="trailing" constant="16" id="T8f-9b-h0o"/>
+                            <constraint firstItem="aKn-wL-Y13" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TnK-fW-F4p"/>
+                            <constraint firstItem="Z6i-Sl-8h2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Tpd-Ga-AaR"/>
+                            <constraint firstItem="oCU-ZM-qY8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VN7-9W-GOW"/>
+                            <constraint firstItem="oCU-ZM-qY8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Z1P-I5-Xqz"/>
+                            <constraint firstItem="aKn-wL-Y13" firstAttribute="top" secondItem="Z6i-Sl-8h2" secondAttribute="bottom" constant="8" id="ary-UW-8Se"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aKn-wL-Y13" secondAttribute="bottom" constant="16" id="luk-TZ-9dm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="iconView" destination="KoW-ER-ux7" id="9T0-Ra-KMw"/>
                         <outlet property="nameLabel" destination="Z6i-Sl-8h2" id="sPf-Go-DQZ"/>
                         <outlet property="tableView" destination="aKn-wL-Y13" id="BCl-R1-bGq"/>
                     </connections>
@@ -70,4 +70,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="86.383928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gok" width="200" height="200"/>
+    </resources>
 </document>

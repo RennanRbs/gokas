@@ -10,6 +10,7 @@ import UIKit
 
 class SecondCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var imageView: UIImageView!
     static let identifier = "SecondCollectionViewCell"
     static func nib() -> UINib {
         return UINib(nibName: "SecondCollectionViewCell", bundle: nil)
@@ -17,7 +18,10 @@ class SecondCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        imageView.layer.cornerRadius = 10
+        imageView.clipsToBounds = true
+        imageView.contentMode = .scaleAspectFill
+        
     }
 
 }

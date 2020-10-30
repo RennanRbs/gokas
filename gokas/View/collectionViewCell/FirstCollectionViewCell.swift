@@ -13,12 +13,12 @@ class FirstCollectionViewCell: UICollectionViewCell {
     static func nib() -> UINib {
         return UINib(nibName: "FirstCollectionViewCell", bundle: nil)
     }
-    
     @IBOutlet weak var imageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        imageView.layer.cornerRadius = 80
+        
     }
 
 }

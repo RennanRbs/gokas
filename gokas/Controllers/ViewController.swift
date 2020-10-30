@@ -12,8 +12,6 @@ enum NetworkError: Error {
     case badURL
 }
 
-
-
 class ViewController: UIViewController  {
     
     @IBOutlet weak var iconView: UIView!
@@ -38,6 +36,11 @@ class ViewController: UIViewController  {
         tableView.separatorColor = .clear
     }
     
+    func timeToRealoadTable()  {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
+            self.tableView.reloadData()
+        })
+    }
     
     func getRequestGokas(completion: @escaping ((Result<GokasModel,NetworkError>)-> Void)){
         
@@ -52,15 +55,14 @@ class ViewController: UIViewController  {
                 let gokas  = try JSONDecoder().decode(GokasModel.self, from: dataResponse)
                 completion(.success(gokas))
             } catch {completion(.failure(.badURL))}
-        }.resume()
-    }
+        }.resume()    }
     
     func updateValues(){
         getRequestGokas { (Result) in
             switch Result {
                 case .success(let data):
-                print(data)
                 self.gokasContent = data
+                self.timeToRealoadTable()
                 case .failure(let error):
                     print(error)
             }
@@ -68,11 +70,7 @@ class ViewController: UIViewController  {
         }
     }
     
-    
 }
-
-
-
 
 // MARK: extension TableView Delegate and Datasource
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -84,7 +82,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: FirstCollectionTableViewCell.identifier, for: indexPath) as! FirstCollectionTableViewCell
-            
             return cell
         }
         
@@ -96,7 +93,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         if indexPath.row == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: SecondViewTableViewCell.identifier, for: indexPath) as! SecondViewTableViewCell
-            cell.imageView?.backgroundColor = .black
+            cell.imageView?.image(fromUrl: "https://s3-sa-east-1.amazonaws.com/digio-exame/cash_banner.png")
             return cell
         }
         if indexPath.row == 3 {
@@ -119,11 +116,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath.row == 1 || indexPath.row == 3) {return 50}
-        if (indexPath.row == 4) {return 100}
+        if (indexPath.row == 2) {return 90}
+        if (indexPath.row == 4) {return 120}
         else {return 200}
     }
 }
-
-
-
-
